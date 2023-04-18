@@ -1,0 +1,121 @@
+Fido2AttestationResult {
+  validateExpectations: [AsyncFunction: validateExpectations],
+  validateCreateRequest: [Function: validateCreateRequest],
+  validateRawClientDataJson: [AsyncFunction: validateRawClientDataJson],
+  validateOrigin: [AsyncFunction: validateOrigin],
+  validateId: [AsyncFunction: validateId],
+  validateCreateType: [AsyncFunction: validateCreateType],
+  validateGetType: [AsyncFunction: validateGetType],
+  validateChallenge: [AsyncFunction: validateChallenge],
+  validateTokenBinding: [AsyncFunction: validateTokenBinding],
+  validateTransports: [AsyncFunction: validateTransports],
+  validateRawAuthnrData: [AsyncFunction: validateRawAuthnrData],
+  validateAttestation: [AsyncFunction: validateAttestation],
+  validateAssertionSignature: [AsyncFunction: validateAssertionSignature],
+  validateRpIdHash: [AsyncFunction: validateRpIdHash],
+  validateAaguid: [AsyncFunction: validateAaguid],
+  validateCredId: [AsyncFunction: validateCredId],
+  validatePublicKey: [AsyncFunction: validatePublicKey],
+  validateExtensions: [Function: validateExtensions],
+  validateFlags: [AsyncFunction: validateFlags],
+  validateUserHandle: [AsyncFunction: validateUserHandle],
+  validateCounter: [AsyncFunction: validateCounter],
+  validateInitialCounter: [AsyncFunction: validateInitialCounter],
+  validateAssertionResponse: [Function: validateAssertionResponse],
+  audit: {
+    validExpectations: true,
+    validRequest: true,
+    complete: true,
+    journal: Set(19) {
+      'type',
+      'aaguid',
+      'credentialPublicKeyCose',
+      'credentialPublicKeyJwk',
+      'credentialPublicKeyPem',
+      'rawClientDataJson',
+      'origin',
+      'challenge',
+      'tokenBinding',
+      'rawId',
+      'rawAuthnrData',
+      'rpIdHash',
+      'flags',
+      'webAuthnExtensions',
+      'fmt',
+      'counter',
+      'credId',
+      'credIdLen',
+      'transports'
+    },
+    warning: Map(0) {},
+    info: Map(0) {}
+  },
+  validateAudit: [AsyncFunction: validateAudit],
+  requiredExpectations: Set(3) { 'origin', 'challenge', 'flags' },
+  optionalExpectations: Set(1) { 'rpId' },
+  expectations: Map(3) {
+    'origin' => 'http://localhost:3000',
+    'challenge' => 'y-_U_bRa-A-91J0lj2oDIejcHBMjfQy8Hj7N5TY1nbx-vwbNa7QF9D_yB2boYhMcTWbBf_tvbWjpt9YsnUX1_EcPA3wW0XS7OPSrcC-MXL-gxywctHo_77kCDwEtgPZv1FAS4OWWQNbD0X_YxXzhqEbpMGCGbej0dIdq80mEDmI',
+    'flags' => Set(2) { 'AT', 'UP-or-UV' }
+  },
+  request: {
+    rawId: ArrayBuffer {
+      [Uint8Contents]: <c9 20 5a 2f 01 af 28 62 f4 d9 31 4f 77 65 61 13 a5 f6 22 74 20 c5 6c 75 ec 1e 2c 91 23 69 cf 0d 82 2b ed 1b 6d 9a eb 94 91 18 53 73 d5 1e 8c 44>,
+      byteLength: 48
+    },
+    response: { attestationObject: [ArrayBuffer], clientDataJSON: [ArrayBuffer] }
+  },
+  clientData: Map(6) {
+    'challenge' => 'y-_U_bRa-A-91J0lj2oDIejcHBMjfQy8Hj7N5TY1nbx-vwbNa7QF9D_yB2boYhMcTWbBf_tvbWjpt9YsnUX1_EcPA3wW0XS7OPSrcC-MXL-gxywctHo_77kCDwEtgPZv1FAS4OWWQNbD0X_YxXzhqEbpMGCGbej0dIdq80mEDmI',
+    'origin' => 'http://localhost:3000',
+    'type' => 'webauthn.create',
+    'tokenBinding' => undefined,
+    'rawClientDataJson' => ArrayBuffer {
+      [Uint8Contents]: <7b 22 74 79 70 65 22 3a 22 77 65 62 61 75 74 68 6e 2e 63 72 65 61 74 65 22 2c 22 63 68 61 6c 6c 65 6e 67 65 22 3a 22 79 2d 5f 55 5f 62 52 61 2d 41 2d 39 31 4a 30 6c 6a 32 6f 44 49 65 6a 63 48 42 4d 6a 66 51 79 38 48 6a 37 4e 35 54 59 31 6e 62 78 2d 76 77 62 4e 61 37 51 46 39 44 5f 79 42 32 62 6f 59 ... 165 more bytes>,
+      byteLength: 265
+    },
+    'rawId' => ArrayBuffer {
+      [Uint8Contents]: <c9 20 5a 2f 01 af 28 62 f4 d9 31 4f 77 65 61 13 a5 f6 22 74 20 c5 6c 75 ec 1e 2c 91 23 69 cf 0d 82 2b ed 1b 6d 9a eb 94 91 18 53 73 d5 1e 8c 44>,
+      byteLength: 48
+    }
+  },
+  authnrData: Map(13) {
+    'fmt' => 'none',
+    'rawAuthnrData' => ArrayBuffer {
+      [Uint8Contents]: <49 96 0d e5 88 0e 8c 68 74 34 17 0f 64 76 60 5b 8f e4 ae b9 a2 86 32 c7 99 5c f3 ba 83 1d 97 63 c5 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 30 c9 20 5a 2f 01 af 28 62 f4 d9 31 4f 77 65 61 13 a5 f6 22 74 20 c5 6c 75 ec 1e 2c 91 23 69 cf 0d 82 2b ed 1b 6d 9a eb 94 91 18 53 73 d5 ... 94 more bytes>,
+      byteLength: 194
+    },
+    'transports' => undefined,
+    'rpIdHash' => ArrayBuffer {
+      [Uint8Contents]: <49 96 0d e5 88 0e 8c 68 74 34 17 0f 64 76 60 5b 8f e4 ae b9 a2 86 32 c7 99 5c f3 ba 83 1d 97 63>,
+      byteLength: 32
+    },
+    'flags' => Set(4) { 'UP', 'UV', 'AT', 'ED' },
+    'counter' => 2,
+    'aaguid' => ArrayBuffer {
+      [Uint8Contents]: <00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>,
+      byteLength: 16
+    },
+    'credIdLen' => 48,
+    'credId' => ArrayBuffer {
+      [Uint8Contents]: <c9 20 5a 2f 01 af 28 62 f4 d9 31 4f 77 65 61 13 a5 f6 22 74 20 c5 6c 75 ec 1e 2c 91 23 69 cf 0d 82 2b ed 1b 6d 9a eb 94 91 18 53 73 d5 1e 8c 44>,
+      byteLength: 48
+    },
+    'credentialPublicKeyCose' => ArrayBuffer {
+      [Uint8Contents]: <a5 01 02 03 26 20 01 21 58 20 c9 20 5a 2f 01 af 28 62 f4 d9 31 4f 77 72 0c a0 f1 f7 fe 58 6a de 5d 43 cb a5 ac 88 4a 62 26 c3 22 58 20 1e a5 9e cd 38 5c a4 59 87 e9 45 5e 5f 25 a4 7a 9e bd 4e 92 49 d3 80 0a 6e c2 0d 49 7d 9e f3 f2 a1 6b 63 72 65 64 50 72 6f 74 65 63 74 02>,
+      byteLength: 91
+    },
+    'credentialPublicKeyJwk' => {
+      kty: 'EC',
+      alg: 'ES256',
+      crv: 'P-256',
+      x: 'ySBaLwGvKGL02TFPd3IMoPH3_lhq3l1Dy6WsiEpiJsM',
+      y: 'HqWezThcpFmH6UVeXyWkep69TpJJ04AKbsINSX2e8_I'
+    },
+    'credentialPublicKeyPem' => '-----BEGIN PUBLIC KEY-----\n' +
+      'MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEySBaLwGvKGL02TFPd3IMoPH3/lhq\n' +
+      '3l1Dy6WsiEpiJsMepZ7NOFykWYfpRV5fJaR6nr1OkknTgApuwg1JfZ7z8g==\n' +
+      '-----END PUBLIC KEY-----\n',
+    'webAuthnExtensions' => [ [Object] ]
+  }
+}
